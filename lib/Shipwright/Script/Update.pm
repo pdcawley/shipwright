@@ -12,6 +12,7 @@ __PACKAGE__->mk_accessors(
 use Shipwright;
 use File::Spec::Functions qw/catdir/;
 use Shipwright::Util;
+use Shipwright::Source;
 use File::Copy qw/copy move/;
 use File::Temp qw/tempdir/;
 use Config;
