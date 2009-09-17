@@ -51,7 +51,7 @@ sub _run {
 
     my $cmd = [
         $ENV{'SHIPWRIGHT_SVN'},
-        'export', '--force'
+        'export', '--force',
         $self->source,
         catdir( $self->download_directory, $self->name ),
         $self->version ? ( '-r', $self->version ) : (),
